@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Maintenance</title>
+    <link rel="stylesheet" href="maint.css"> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Optional: prevent indexing -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        /* Loading Spinner */
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #38b2ac;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Logo section */
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Fade-in animation */
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Add subtle gradient background */
+        body {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Add your logo -->
+        <img src="logo.png" alt="Site Logo" class="logo">
+
+        <h1>🚧 This Website is Under Maintenance 🚧</h1>
+        <p>We're enhancing our service to bring you a better and faster experience.</p>
+        <p>We expect to be fully back online by:
+            <span class="date">December 15, 2025</span>
+        </p>
+
+        <div class="loader"></div>
+        <p>Thank you for your patience!<br>
+           <a href="https://67183b1081b9a7f8d2a3e840--inosentsagar.netlify.app/" style="color:#63b3ed;text-decoration:none;">Contact Support</a>
+        </p>
+    </div>
+
+    <!-- Optional Auto Redirect -->
+    <script>
+        // Redirect users after maintenance ends (change URL below)
+        const redirectDate = new Date("December 15, 2025 00:00:00").getTime();
+        const redirectURL = "https://67183b1081b9a7f8d2a3e840--inosentsagar.netlify.app/"; // replace with your main site
